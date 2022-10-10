@@ -1,0 +1,530 @@
+@font-face {
+    font-family: Nunito;
+    src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: RockSalt;
+    src: url("../fonts/Rock_Salt/RockSalt-Regular.ttf");
+}
+
+
+/* 
+Bis 600 px: Small
+601 px - 900 px: Medium
+901 px - 1200 px: Large
+Alles größer als 1201 px: Extra Large
+
+!Color Pink: #df8480
+ */
+
+
+/* 
+! Bis 600 px: Small
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+header {
+    background: url("../../assets/img/dog_catching_snack.jpg");
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+header h1 {
+    color: black;
+    font-family: RockSalt;
+    font-size: 2.5rem;
+    align-self: center;
+    font-variation-settings: "wght" 300;
+}
+
+header h3 {
+    color: #df8480;
+    font-size: 2rem;
+    font-family: Nunito;
+    font-variation-settings: "wght" 800;
+    width: 20rem;
+    align-self: flex-end;
+    text-align: right;
+}
+
+/* 
+================================================
+!                      MAIN
+================================================
+*/
+.hiw {
+    display: flex;
+    flex-direction: column;
+    font-family: Nunito;
+    align-items: center;
+}
+
+.hiw div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.hiw h3,
+.wotmh3 {
+    background-color: #df8480;
+    width: 100%;
+    padding: 3rem 2rem;
+    align-self: center;
+    text-align: center;
+    color: white;
+    font-family: Nunito;
+    font-size: 2rem;
+    font-variation-settings: "wght" 700;
+}
+
+.hiw h1 {
+    width: 100%;
+    padding: 2rem;
+    align-self: center;
+    text-align: center;
+    color: #df8480;
+    font-family: Nunito;
+    font-size: 6rem;
+    font-variation-settings: "wght" 800;
+}
+
+.hiw p {
+    color: black;
+    font-family: Nunito;
+    font-size: 2.5rem;
+    font-variation-settings: "wght" 600;
+    text-align: center;
+}
+
+/* 
+===================================
+!wotm = Whats on the Menu?
+===================================
+ */
+
+.wotmimg {
+    background: url("../img/dog_eating_cookies.jpg");
+    width: 100%;
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bowl {
+    background-image: url("../img/dog_bowl.png");
+    margin: 5rem 0;
+    padding: 0 10rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: contain;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bowl h3 {
+    font-family: Nunito;
+    font-size: 2.5rem;
+    font-variation-settings: "wght" 700;
+}
+
+.bowl .del {
+    align-self: flex-end;
+}
+
+.bowl .or {
+    margin-left: 5rem;
+}
+
+.wotm p {
+    font-family: Nunito;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2.5rem 1rem;
+}
+
+/* 
+===================================
+!Footer
+===================================
+ */
+
+footer {
+    display: flex;
+    background-color: #252525;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    padding-bottom: 5rem;
+}
+
+footer h3 {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    font-family: Nunito;
+}
+
+footer form {
+    width: 56rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer form input,
+footer form label {
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2rem 0px;
+    border-radius: 10rem;
+    font-family: Nunito;
+}
+
+footer form input[type="submit"] {
+    background-color: #df8480;
+    color: white;
+}
+
+footer div {
+    margin-top: 9rem;
+    margin-bottom: 2rem;
+    width: 56rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div img {
+    height: 7rem;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    font-family: Nunito;
+}
+
+
+/* 
+===================================
+*       ab 600px-900px (Medium)
+===================================
+ */
+
+@media only screen and (min-width: 601px) {
+    * {
+        font-size: 10px;
+    }
+
+    .hiw {
+        align-items: flex-start;
+    }
+
+    .hiw div {
+        flex-direction: row;
+        text-align: right;
+        justify-content: flex-start;
+        padding: 1rem 5rem;
+    }
+
+    .hiw h1 {
+        width: auto;
+        text-align: left;
+        align-self: left;
+
+    }
+
+    .hiw p {
+        text-align: left;
+
+    }
+
+    /* 
+===================================
+*wotm = Whats on the Menu? 600-900px
+===================================
+ */
+
+    .wotm section {
+        display: flex;
+        width: 100%;
+    }
+
+    .bowl {
+        background-image: url("../img/dog_bowl.png");
+        margin: 5rem 0;
+        padding: 0 2rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-size: contain;
+        height: 30rem;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .wotmimg {
+        background: url("../img/dog_eating_cookies.jpg");
+        width: 50%;
+        height: 40rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    footer div {
+        margin-top: 9rem;
+        margin-bottom: 2rem;
+        width: 30rem;
+        align-self: flex-start;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 0rem;
+
+    }
+
+    footer p {
+        align-self: flex-end
+    }
+}
+
+
+/* 
+===================================
+*       ab 901px-1200px (Medium)
+===================================
+ */
+
+@media only screen and (min-width: 901px) {
+    * {
+        font-size: 15px;
+    }
+
+    header {
+        padding: 0px;
+        background: none;
+    }
+
+    header div {
+        display: flex;
+        height: 100%;
+    }
+
+    header h1 {
+        background-color: white;
+        width: 100%;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    header h3 {
+        background-color: #df8480;
+        width: 50%;
+        color: white;
+        height: 100%;
+        padding: 3rem;
+        font-size: 3rem;
+        padding-left: 20rem;
+
+    }
+
+    .headerbgimg {
+        background: url("../../assets/img/dog_catching_snack.jpg");
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    /* 
+===================================
+*hiw =  How it works? 901-1200px
+===================================
+ */
+    .hiw h3 {
+        background-color: white;
+        width: 100%;
+        color: #df8480;
+        font-size: 5rem;
+    }
+
+    .hiw section {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem 7rem;
+        width: 100%;
+    }
+
+    .hiw section div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 20rem;
+        box-shadow: 0px 1px 10px lightgrey;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+
+    .hiw section div p {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    /* 
+===================================
+*wotm =  Whats on the Menu? 901-1200px
+===================================
+ */
+    .wotmh3 {
+        background-color: white;
+        width: 100%;
+        color: #df8480;
+        font-size: 5rem;
+    }
+
+    .wotm {
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .wotm section {
+        display: flex;
+        width: 75%;
+    }
+
+    .wotm .divp {
+        width: 30%;
+        background-color: #df8480;
+        color: white;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: flex-start;
+        align-self: flex-start;
+        font-size: 2rem;
+        padding: 0 10px;
+        height: 20.5rem;
+        display: flex;
+    }
+
+    .wotm .divp p {
+        color: white;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.7rem;
+        padding: auto 10px;
+        font-variation-settings: "wght" 250;
+    }
+
+    .wotmimg {
+        background: url("../img/dog_eating_cookies.jpg");
+        width: 38.25%;
+        height: 20.5rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+
+    }
+
+    .bowl {
+        margin: 5rem 0;
+        padding: 0 2rem;
+        height: 15rem;
+        width: 56.75%;
+    }
+
+    .bowl h3 {
+        font-size: 1.6rem;
+    }
+
+    /* 
+===================================
+* Footer 901-1200px
+===================================
+ */
+
+    footer form {
+        width: 40%;
+        gap: 0.3rem
+    }
+
+    footer form input {
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
+    footer p,
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    footer div {
+        width: 22rem;
+    }
+
+    footer div img {
+        height: 5rem;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+
+    * {
+        font-size: 10px;
+    }
+
+    html {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body {
+        max-width: 1201px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer {
+        /* width: 99.2vw; */
+        padding: 1rem 20vw;
+        background-size: cover;
+    }
+
+    footer form {
+        width: 25%;
+        gap: 0.3rem
+    }
+
+}
